@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 01: Vanilla JavaScript sprite animation techniques</title>
+    <!-- Nomalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/global.css">
+
+    <!-- CSS Project01 -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <canvas id="canvas1"></canvas>
+    <div class="controls">
+        <label for="animations">Choose Animation:</label>
+        <select name="animations" id="animations">
+            <option value="idle">Idle</option>
+            <option value="jump">Jump</option>
+            <option value="fall">Fall</option>
+            <option value="run">Run</option>
+            <option value="dizzy">Dizzy</option>
+            <option value="sit">Sit</option>
+            <option value="roll">Roll</option>
+            <option value="bite">Bite</option>
+            <option value="ko">Ko</option>
+            <option value="getHit">Get Hit</option>
+        </select>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
